@@ -33,7 +33,7 @@ export default function GameMemory({ exercise, onComplete }: GameMemoryProps) {
     ];
     
     const newCards: Card[] = [];
-    pairs.forEach((pair, idx) => {
+    pairs.forEach((pair: { letter: string; image: string }, idx: number) => {
       newCards.push(
         { id: idx * 2, content: pair.letter, type: 'letter', flipped: false, matched: false },
         { id: idx * 2 + 1, content: pair.image, type: 'image', flipped: false, matched: false }

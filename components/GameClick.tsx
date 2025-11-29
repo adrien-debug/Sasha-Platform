@@ -26,9 +26,9 @@ export default function GameClick({ exercise, onComplete }: GameClickProps) {
     // Vérifier si tous les bons monstres sont cliqués
     const correctIndices = monsters
       .map((m: any, idx: number) => (m.letter === targetLetter ? idx : -1))
-      .filter(idx => idx !== -1);
+      .filter((idx: number) => idx !== -1);
     
-    const allClicked = correctIndices.every(idx => newClicked[idx]);
+    const allClicked = correctIndices.every((idx: number) => newClicked[idx]);
     if (allClicked && correctIndices.length > 0) {
       setCompleted(true);
       setTimeout(() => {

@@ -79,7 +79,7 @@ export default function Home() {
             <StarIcon size={32} className="text-yellow-400" />
           </motion.div>
           <p className="text-child-xl font-bold text-white drop-shadow-lg">
-            Prêt à devenir un Maître d'Apprentissage ?
+            Prêt à devenir un Maître d&apos;Apprentissage ?
           </p>
           <motion.div
             animate={{ rotate: [360, 0] }}

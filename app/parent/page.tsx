@@ -76,7 +76,7 @@ export default function ParentPage() {
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-5xl font-bold text-gray-800">Tableau de bord parent</h1>
           <Link href="/" className="btn-secondary">
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </div>
 
@@ -145,7 +145,7 @@ export default function ParentPage() {
                 ))}
               </ul>
             ) : (
-              <p className="text-child-lg text-gray-600">En cours d'analyse...</p>
+              <p className="text-child-lg text-gray-600">En cours d&apos;analyse...</p>
             )}
           </div>
 

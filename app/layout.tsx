@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Aventure de Sacha - Apprentissage CP',
-  description: 'Plateforme d\'apprentissage ludique pour Sacha',
+  description: 'Plateforme d&apos;apprentissage ludique pour Sacha',
 };
 
 export default function RootLayout({

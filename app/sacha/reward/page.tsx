@@ -102,7 +102,7 @@ export default function RewardPage() {
           transition={{ delay: 0.7 }}
         >
           <Link href="/sacha" className="btn-primary">
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </motion.div>
       </div>

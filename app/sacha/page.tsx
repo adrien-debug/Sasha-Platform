@@ -134,7 +134,7 @@ export default function SachaPage() {
                 <CelebrationIcon size={64} className="text-green-600" />
               </motion.div>
               <p className="text-child-xl font-black text-green-600 mb-4 drop-shadow-lg">
-                BRAVO ! Tu as terminé ta séance d'aujourd'hui !
+                BRAVO ! Tu as terminé ta séance d&apos;aujourd&apos;hui !
               </p>
               <p className="text-child-lg text-gray-700 mb-6">
                 Reviens demain pour une nouvelle aventure !

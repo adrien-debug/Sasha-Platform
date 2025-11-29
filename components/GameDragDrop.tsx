@@ -18,11 +18,11 @@ export default function GameDragDrop({ exercise, onComplete }: GameDragDropProps
   const target = exercise.data.target || '';
   const targetLength = target.length / 2; // Supposons que chaque syllabe fait 2 caractères
 
-  const handleDragStart = (e: React.DragEvent, piece: string) => {
+  const handleDragStart = (e: React.DragEvent<HTMLDivElement>, piece: string) => {
     e.dataTransfer.setData('piece', piece);
   };
 
-  const handleDrop = (e: React.DragEvent, slotIndex: number) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>, slotIndex: number) => {
     e.preventDefault();
     const piece = e.dataTransfer.getData('piece');
     const newSlots = [...slots];
@@ -31,7 +31,7 @@ export default function GameDragDrop({ exercise, onComplete }: GameDragDropProps
     setPieces(pieces.filter(p => p !== piece));
   };
 
-  const handleDragOver = (e: React.DragEvent) => {
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
   };
 
@@ -84,7 +84,7 @@ export default function GameDragDrop({ exercise, onComplete }: GameDragDropProps
             <motion.div
               key={idx}
               draggable
-              onDragStart={(e) => handleDragStart(e, piece)}
+              onDragStart={(e) => handleDragStart(e as unknown as React.DragEvent<HTMLDivElement>, piece)}
               className="p-4 bg-gradient-to-br from-yellow-200 to-orange-300 rounded-2xl text-child-lg font-bold cursor-move shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.1 }}
               whileDrag={{ scale: 1.2, opacity: 0.5 }}
