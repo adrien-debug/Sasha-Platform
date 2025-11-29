@@ -34,3 +34,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# local scripts and configs
+start-server.sh
+check-network.sh
+SETUP_GITHUB.sh
+NETWORK_ACCESS.md
+
+# local images (keep only public versions)
+Wallpaper.webp
+logo1.jpg
+logo2.webp
+channels4_profile.jpg
+Pokemon-go-image-1-new.webp
+
